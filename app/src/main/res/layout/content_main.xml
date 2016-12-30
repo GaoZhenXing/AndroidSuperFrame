@@ -13,6 +13,11 @@
     tools:context="com.jason.androidsuperframe.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

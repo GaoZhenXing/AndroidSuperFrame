@@ -1,4 +1,4 @@
-package com.jason.superframe.photobrowser;
+package com.jason.superframe.assembly.photo_browser;
 
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;

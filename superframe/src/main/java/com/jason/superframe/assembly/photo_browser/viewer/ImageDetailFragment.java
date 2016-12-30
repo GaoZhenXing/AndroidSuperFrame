@@ -1,4 +1,4 @@
-package com.jason.superframe.photobrowser.viewer;
+package com.jason.superframe.assembly.photo_browser.viewer;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

@@ -4,14 +4,17 @@
     <meta-data
         android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
         android:value="GlideModule" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:supportsRtl="true">
         <activity
-            android:name=".photobrowser.viewer.ImagePagerActivity"
+            android:name=".assembly.photo_browser.viewer.ImagePagerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".photobrowser.ImageViewPagerActivity"
+            android:name=".assembly.photo_browser.ImageViewPagerActivity"
             android:screenOrientation="portrait" />
 
     </application>

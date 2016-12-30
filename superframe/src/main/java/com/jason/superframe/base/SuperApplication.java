@@ -9,12 +9,9 @@ import com.jason.superframe.utils.ErrerCrashHandler;
 
 public class SuperApplication extends Application {
     private final String LOG_TAG = "SuperApplication";
-    public static ActivitiesManager activitiesManager;
 
     @Override
     public void onCreate() {
-
-        activitiesManager = ActivitiesManager.getInstance();
         ErrerCrashHandler.getInstance();//打印错误日志
         //logUtils注册
         LogUtils.getLogConfig()
