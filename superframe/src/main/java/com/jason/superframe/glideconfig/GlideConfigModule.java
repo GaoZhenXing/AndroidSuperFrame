@@ -9,6 +9,8 @@ import com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool;
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
 import com.bumptech.glide.load.engine.cache.LruResourceCache;
 import com.bumptech.glide.module.GlideModule;
+import com.bumptech.glide.request.target.ViewTarget;
+import com.jason.superframe.R;
 
 /**
  * 项目名称：superFrame
@@ -27,6 +29,8 @@ public class GlideConfigModule implements GlideModule {
 
     @Override
     public void applyOptions(Context context, GlideBuilder builder) {
+        //全局设置ViewTaget的tagId:
+        ViewTarget.setTagId(R.id.glide_tag_id);
         // 指定位置在packageName/cache/glide_cache,大小为MAX_CACHE_DISK_SIZE的磁盘缓存
         builder.setDiskCache(new InternalCacheDiskCacheFactory(context, "glide_cache", ConfigConstants.MAX_CACHE_DISK_SIZE));
         //指定内存缓存大小

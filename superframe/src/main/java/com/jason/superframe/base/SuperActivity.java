@@ -10,9 +10,7 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.jaeger.library.StatusBarUtil;
-import com.jason.superframe.R;
-import com.jason.superframe.constants.Constants;
+import com.jason.superframe.constant.Constants;
 import com.jason.superframe.utils.ActivitiesManager;
 import com.jason.superframe.utils.NetUtil;
 

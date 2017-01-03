@@ -2,6 +2,9 @@
     package="com.jason.superframe">
 
     <meta-data
+        android:name="com.jason.superframe.glideconfig.GlideConfigModule"
+        android:value="GlideModule" />
+    <meta-data
         android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
         android:value="GlideModule" />
     <uses-permission android:name="android.permission.INTERNET"/>

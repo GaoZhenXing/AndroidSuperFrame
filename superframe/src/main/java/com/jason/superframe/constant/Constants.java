@@ -1,4 +1,4 @@
-package com.jason.superframe.constants;
+package com.jason.superframe.constant;
 
 /**
  * 项目名称：AndroidSuperFrame
