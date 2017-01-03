@@ -17,7 +17,7 @@ public class SuperApplication extends Application {
         LogUtils.getLogConfig()
                 .configAllowLog(true)
                 .configTagPrefix(LOG_TAG)
-                .configShowBorders(false)
+                .configShowBorders(true)
                 .configFormatTag("%d{HH:mm:ss:SSS} %t %c{-2}")
                 .configLevel(LogLevel.TYPE_VERBOSE);
         super.onCreate();
