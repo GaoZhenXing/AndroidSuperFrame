@@ -1,1 +1,1 @@
-include ':app', ':superframe', ':multi-image-selector'
+include ':app', ':superframe'
