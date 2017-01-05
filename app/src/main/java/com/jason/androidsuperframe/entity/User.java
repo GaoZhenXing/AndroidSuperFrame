@@ -1,5 +1,7 @@
 package com.jason.androidsuperframe.entity;
 
+import com.jason.superframe.base.SuperEntity;
+
 /**
  * 项目名称：AndroidSuperFrame
  * 〈用户实体类〉
@@ -8,7 +10,7 @@ package com.jason.androidsuperframe.entity;
  * 创建日期：2016/12/27.16:03
  */
 
-public class User {
+public class User extends SuperEntity {
 
     private String name;
     private String phone;

@@ -7,9 +7,12 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.jaeger.library.StatusBarUtil;
+import com.jason.superframe.R;
 import com.jason.superframe.constant.Constants;
 import com.jason.superframe.utils.ActivitiesManager;
 import com.jason.superframe.utils.NetUtil;
@@ -64,12 +67,22 @@ public abstract class SuperActivity extends AppCompatActivity {
     };
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ActivitiesManager.getInstance().addActivity(this);
-//        StatusBarUtil.setColor(this,0xFF0000 );
+    public void setContentView(@LayoutRes int layoutResID) {
+        super.setContentView(layoutResID);
+        setStatusBar();
     }
 
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+//        StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimary));
+        super.onCreate(savedInstanceState);
+
+        ActivitiesManager.getInstance().addActivity(this);
+
+    }
+    protected void setStatusBar() {
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimary));
+    }
     @Override
     protected void onDestroy() {
         super.onDestroy();

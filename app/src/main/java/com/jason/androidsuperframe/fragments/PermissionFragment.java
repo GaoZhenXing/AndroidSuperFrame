@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jason.androidsuperframe.R;
 import com.jason.superframe.base.SuperFragment;
 
 /**
@@ -20,8 +21,8 @@ public class PermissionFragment extends SuperFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }
+        View v = inflater.inflate(R.layout.layout_http_fragment, container, false);
+        return v;    }
 
 
 }

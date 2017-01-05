@@ -9,6 +9,7 @@ package com.jason.superframe.constant;
  */
 
 public class Constants {
+
     public static final String ACTION_NETWORK_CHANGE = "android.net.conn.CONNECTIVITY_CHANGE";//网络改变
     public static final String ACTION_PUSH_DATA = "fm.data.push.action";//数据推送
     public static final String ACTION_NEW_VERSION = "apk.update.action";//版本更新
